@@ -1,0 +1,17 @@
+:root{--ks-ink:#102338;--ks-paper:#fff;--ks-accent:#007dba;--ks-header-height:76px;--ks-ease:cubic-bezier(.22,1,.36,1);--ks-duration:760ms}
+.ks-header{position:fixed;z-index:100;inset:0 0 auto;min-height:var(--ks-header-height);display:flex;align-items:center;justify-content:space-between;padding:1rem clamp(1rem,4vw,3.5rem);color:white;background:transparent;transition:background .3s,color .3s;box-sizing:border-box}
+.ks-header.ks-header--scrolled,.ks-header:has([aria-expanded="true"]){color:var(--ks-ink);background:var(--ks-paper);box-shadow:0 1px 12px #0001}
+.ks-header a{color:inherit}.ks-header button{cursor:pointer}
+.ks-overlay{position:fixed;z-index:200;inset:0;background:var(--ks-ink);color:#fff;display:grid;place-items:center;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .35s,visibility .35s}
+.ks-overlay[aria-hidden="false"]{visibility:visible;opacity:1;pointer-events:auto}
+.ks-overlay a{color:inherit}.ks-overlay__close{position:absolute;top:1.25rem;right:1.25rem;cursor:pointer}
+.ks-scroll-locked{overflow:hidden}
+.ks-hero [data-ks-hero-part]{opacity:0;transform:translateY(22px);transition:opacity var(--ks-duration) var(--ks-ease),transform var(--ks-duration) var(--ks-ease);transition-delay:calc(var(--ks-order,0)*110ms)}
+.ks-hero.ks-visible [data-ks-hero-part]{opacity:1;transform:none}
+[data-ks-reveal],[data-ks-h2],[data-ks-image]{opacity:0;transform:translateY(30px);transition:opacity var(--ks-duration) var(--ks-ease),transform var(--ks-duration) var(--ks-ease)}
+[data-ks-image]{overflow:hidden;transform:translateY(20px) scale(.98)}
+[data-ks-reveal].ks-visible,[data-ks-h2].ks-visible,[data-ks-image].ks-visible{opacity:1;transform:none}
+.ks-marquee{overflow:hidden;white-space:nowrap}.ks-marquee__track{display:inline-flex;gap:2rem;min-width:max-content;animation:ks-marquee-scroll 25s linear infinite}
+@keyframes ks-marquee-scroll{to{transform:translateX(-50%)}}
+.ks-marquee:hover .ks-marquee__track,.ks-marquee:focus-within .ks-marquee__track{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.ks-header,.ks-overlay,.ks-hero [data-ks-hero-part],[data-ks-reveal],[data-ks-h2],[data-ks-image]{transition:none!important;animation:none!important;transform:none!important;opacity:1!important}.ks-marquee__track{animation:none!important}}
