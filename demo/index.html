@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KS Web Design Master — Demo</title><link rel="stylesheet" href="../src/ks-design.css">
+<style>body{margin:0;font:clamp(16px,2vw,21px)/1.65 system-ui,sans-serif;color:#102338}button{font:inherit;padding:.5rem 1rem;border:1px solid currentColor;background:transparent;color:inherit;border-radius:4px}a{color:inherit}.ks-hero{min-height:85svh;display:grid;align-content:center;gap:1rem;padding:9rem 8vw 5rem;color:white;background:linear-gradient(135deg,#055a80,#102338)}.ks-hero h1{font-size:clamp(3rem,9vw,8rem);line-height:1;margin:0}.section{min-height:65vh;padding:7rem 8vw}.section h2{font-size:clamp(2.5rem,6vw,5rem)}.ks-header__brand{font-weight:800}.ks-overlay nav{display:grid;gap:1rem;text-align:center;font-size:clamp(2rem,5vw,4rem)}.ks-marquee{padding:2rem;background:#ddf7ff;font-weight:bold;font-size:2rem}.ks-image-placeholder{background:linear-gradient(125deg,#9bdbed,#087baa);min-height:270px;display:grid;place-items:center;color:white;border-radius:8px}</style></head>
+<body>
+<header class="ks-header" data-ks-header><a href="#" class="ks-header__brand">KS DESIGN</a><button data-ks-overlay-open aria-controls="ks-menu" aria-expanded="false">MENU</button></header>
+<div class="ks-overlay" data-ks-overlay id="ks-menu" role="dialog" aria-modal="true" aria-label="サイトメニュー" aria-hidden="true" tabindex="-1">
+<button class="ks-overlay__close" data-ks-overlay-close>閉じる ×</button><nav aria-label="メインナビ"><a href="#intro" data-ks-overlay-close>ABOUT</a><a href="#motion" data-ks-overlay-close>MOTION</a><a href="#end" data-ks-overlay-close>END</a></nav></div>
+<main><section class="ks-hero" data-ks-hero><div data-ks-hero-part style="--ks-order:0">REUSABLE MOTION SYSTEM</div><h1 data-ks-hero-part style="--ks-order:1">DESIGN<br>MASTER</h1><p data-ks-hero-part style="--ks-order:2">写真・動画・共有ボタンを含まないデザインの動作確認用デモ</p></section>
+<section class="section" id="intro"><h2 data-ks-h2>H2 Reveal</h2><p data-ks-reveal>スクロールすると、テキストが自然に現れます。</p></section>
+<div class="ks-marquee" aria-label="DESIGN / MOTION / REUSE"><div class="ks-marquee__track" aria-hidden="true"><span>DESIGN / MOTION / REUSE / </span><span>DESIGN / MOTION / REUSE / </span></div></div>
+<section class="section" id="motion"><h2 data-ks-h2>Image Reveal</h2><div data-ks-image class="ks-image-placeholder">NO IMAGE ASSETS</div><p data-ks-reveal>実サイトでは、この枠の中の画像をサイト側で管理します。</p></section>
+<section class="section" id="end"><h2 data-ks-h2>Reuse safely.</h2><p data-ks-reveal>本番サイトには自動適用しません。</p></section></main>
+<script type="module">import { initKSDesign } from '../src/ks-motion.js';initKSDesign();</script></body></html>
