@@ -8,6 +8,10 @@
 
 Claude CodeによるWeb制作では、[CLAUDE_REQUIRED_SKILLS.md](CLAUDE_REQUIRED_SKILLS.md) に従い、公式 `frontend-design` とRSS7独自 `rss7-wireframe`・`rss7-interactive-prototype` の3つを制作前に有効・呼び出し確認し、各工程で使用する。未確認なら適用済みと報告しない。
 
+## 公開前の必須ブランド素材
+
+新規Webサイト・ブランド刷新案件では [BRAND_ASSETS_STANDARD.md](BRAND_ASSETS_STANDARD.md) に従い、**サイト固有のファビコンと背景透過PNGの正式ロゴを必ず作成・設置・実機確認**する。両方を新規制作の公開ゲートとし、未設定・未検証を完成扱いにしない。既存の承認済みブランドを無断変更しない。素材実体は**案件Repository**で管理し、このMasterにバイナリ素材を追加しない。
+
 ## 必須
 - 対象サイトの既存デザイン・動作・ギミックを調査し、指定された場合は見た目だけでなく挙動も再現する。
 - 共通部品はフルオーバーレイ、透過ヘッダー、Hero Motion、H2 Reveal、Image Reveal、マーキー、スクロール演出。
