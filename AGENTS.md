@@ -2,6 +2,10 @@
 
 このRepositoryは複数Webサイト向けデザイン部品の正本。運用・セキュリティの上位ルールは [ai-master](https://github.com/oosaka0123-sudo/ai-master) の AGENTS.md / docs/standards/WEB_DEVELOPMENT.md に従う。
 
+## 制作フロー
+
+新規Webサイト、主要LP、デザイン刷新は [WORKFLOW_3AI.md](WORKFLOW_3AI.md) の **同一条件での3者独立案 → 比較 → 要素選抜 → 統合案1つ → QA** を標準とする。3案を平均化・人気投票しない。実施したAI接続・実測のみ実施済みと報告し、案件ごとの証拠は案件Repositoryに保管する。小規模タスクはai-masterのReview Levelに従って簡略化可能。
+
 ## 必須
 - 対象サイトの既存デザイン・動作・ギミックを調査し、指定された場合は見た目だけでなく挙動も再現する。
 - 共通部品はフルオーバーレイ、透過ヘッダー、Hero Motion、H2 Reveal、Image Reveal、マーキー、スクロール演出。
