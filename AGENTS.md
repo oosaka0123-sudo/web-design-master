@@ -6,6 +6,8 @@
 
 新規Webサイト、主要LP、デザイン刷新は [WORKFLOW_3AI.md](WORKFLOW_3AI.md) の **同一条件での3者独立案 → 比較 → 要素選抜 → 統合案1つ → QA** を標準とする。3案を平均化・人気投票しない。実施したAI接続・実測のみ実施済みと報告し、案件ごとの証拠は案件Repositoryに保管する。小規模タスクはai-masterのReview Levelに従って簡略化可能。
 
+Claude CodeによるWeb制作では、[CLAUDE_REQUIRED_SKILLS.md](CLAUDE_REQUIRED_SKILLS.md) に従い、公式 `frontend-design` とRSS7独自 `rss7-wireframe`・`rss7-interactive-prototype` の3つを制作前に有効・呼び出し確認し、各工程で使用する。未確認なら適用済みと報告しない。
+
 ## 必須
 - 対象サイトの既存デザイン・動作・ギミックを調査し、指定された場合は見た目だけでなく挙動も再現する。
 - 共通部品はフルオーバーレイ、透過ヘッダー、Hero Motion、H2 Reveal、Image Reveal、マーキー、スクロール演出。
