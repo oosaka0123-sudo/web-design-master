@@ -12,6 +12,8 @@ ChatGPT・Claude・Geminiから再利用する、軽量なWebデザイン・ア�
 
 CONTENTS・DESIGNテンプレートおよびユーザー提供の検品Excelから採用した実務基準は [CONTENT_DESIGN_TEMPLATE_GUIDE.md](CONTENT_DESIGN_TEMPLATE_GUIDE.md) を参照してください。
 
+Claude制作では [必須3スキルの起動・適用ルール](CLAUDE_REQUIRED_SKILLS.md) を確認します。
+
 ## 収録内容
 - Full Overlay（開閉 / ESC / フォーカス制御 / 背景スクロール制御）
 - Transparent Header（スクロール時の状態切替）
