@@ -10,6 +10,8 @@ ChatGPT・Claude・Geminiから再利用する、軽量なWebデザイン・ア�
 
 制作時の品質確認は [ディレクション・リリース検品プロトコル](DIRECTION_QA.md) に従い、確認結果の証拠を案件Repository側に残します。
 
+CONTENTS・DESIGNテンプレートおよびユーザー提供の検品Excelから採用した実務基準は [CONTENT_DESIGN_TEMPLATE_GUIDE.md](CONTENT_DESIGN_TEMPLATE_GUIDE.md) を参照してください。
+
 ## 収録内容
 - Full Overlay（開閉 / ESC / フォーカス制御 / 背景スクロール制御）
 - Transparent Header（スクロール時の状態切替）
