@@ -12,6 +12,10 @@ Claude CodeによるWeb制作では、[CLAUDE_REQUIRED_SKILLS.md](CLAUDE_REQUIRE
 
 新規Webサイト・ブランド刷新案件では [BRAND_ASSETS_STANDARD.md](BRAND_ASSETS_STANDARD.md) に従い、**サイト固有のファビコンと背景透過PNGの正式ロゴを必ず作成・設置・実機確認**する。両方を新規制作の公開ゲートとし、未設定・未検証を完成扱いにしない。既存の承認済みブランドを無断変更しない。素材実体は**案件Repository**で管理し、このMasterにバイナリ素材を追加しない。
 
+## サイト共通UI（RSS7制作サイト）
+
+新規のRSS7制作サイトでは [SITE_SHELL_STANDARD.md](SITE_SHELL_STANDARD.md) に従い、**サイト固有の透過PNGロゴ・ページ共有ボタン・統一フッター・`powered by RSS7.ai Works`** を実装して検証する。素材と共有ボタンの実装は案件Repositoryで管理し、Masterには追加しない。既存サイト・保存版は無断で変更しない。
+
 ## 必須
 - 対象サイトの既存デザイン・動作・ギミックを調査し、指定された場合は見た目だけでなく挙動も再現する。
 - 共通部品はフルオーバーレイ、透過ヘッダー、Hero Motion、H2 Reveal、Image Reveal、マーキー、スクロール演出。
