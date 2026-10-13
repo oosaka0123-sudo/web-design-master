@@ -18,6 +18,8 @@ Claude制作では [必須3スキルの起動・適用ルール](CLAUDE_REQUIRED
 
 新規サイトの制作時には、[ファビコン・背景透過PNGロゴの必須標準](BRAND_ASSETS_STANDARD.md) を適用します。設定と本番確認が済まない限り公開完了扱いにしません。素材の実体は各サイト側で管理し、本Masterに画像ファイルを置きません。
 
+RSS7制作サイトのロゴ・共有ボタン・統一フッター・`powered by RSS7.ai Works` の標準は [SITE_SHELL_STANDARD.md](SITE_SHELL_STANDARD.md) を参照してください。実装コードとロゴ画像は各サイトのRepositoryに置きます。
+
 ## 収録内容
 - Full Overlay（開閉 / ESC / フォーカス制御 / 背景スクロール制御）
 - Transparent Header（スクロール時の状態切替）
