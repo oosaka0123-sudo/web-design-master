@@ -20,6 +20,17 @@
 ## Claude Design画面での扱い
 ClaudeのWeb/Design UIでローカルClaude Codeのプラグインや独自スキルが**自動的にONになるとは限らない**。Web UIから呼べる機能を実機確認し、呼べない場合はClaude Code側で3スキルを使用して実装・QAする。未確認の自動連携を前提にしない。
 
+## クラウド（Claude Code on the web / PC04）での状態（2026-10-15 確認）
+
+| スキル | クラウドでの状態 | 根拠 |
+| --- | --- | --- |
+| `frontend-design` | **使用可** | `claude plugin install frontend-design@anthropic-plugin-directory --scope project` 成功、`claude plugin list` で `enabled`。各案件Repoの `.claude/settings.json` の `enabledPlugins` で宣言 |
+| `rss7-wireframe` | **未配置（使用不可）** | 原本はPC03の `%USERPROFILE%\.claude\skills\` のみ。GitHub上の4 Repo（ai-master / web-design-master / ks01 / chat-homepage）に原本なし。PC03停止中のため取得不可 |
+| `rss7-interactive-prototype` | **未配置（使用不可）** | 同上 |
+
+- 独自2スキルは、PC03復旧時（またはPC03のバックアップから）原本の `SKILL.md` 一式を取り出し、内容をレビューして各案件Repoの `.claude/skills/<name>/` へPRで追加する。**同名の互換品を新規作成しない。**
+- 配置されるまでは「3スキル適用済みの正式デザイン」として完成扱いにしない。
+
 ## 再利用と制約
 - 独自スキルの実体がPC03のローカルだけにある場合、他PC・クラウドへ自動同期済みと扱わない。再現性確保には**内容をレビューして専用の安全なソース管理先へ配置**する。
 - プラグインの追加導入やアップグレードは出所・必要性・権限を確認。既存の制作環境や本番サイトへ勝手に変更を加えない。
