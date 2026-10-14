@@ -20,13 +20,15 @@
 ## Claude Design画面での扱い
 ClaudeのWeb/Design UIでローカルClaude Codeのプラグインや独自スキルが**自動的にONになるとは限らない**。Web UIから呼べる機能を実機確認し、呼べない場合はClaude Code側で3スキルを使用して実装・QAする。未確認の自動連携を前提にしない。
 
-## クラウド（Claude Code on the web / PC04）での状態（2026-10-15 確認）
+## クラウド環境の実測記録（2026-10-15／当時のClaude報告）
 
-| スキル | クラウドでの状態 | 根拠 |
+以下は確認時点の状況であり、将来のクラウドセッション・PC04でのプラグイン有効性や独自スキル使用可否を保証しない。**毎回作業開始時に実際の環境で再検証すること。**
+
+| スキル | 当時のクラウド状態 | 根拠 |
 | --- | --- | --- |
-| `frontend-design` | **使用可** | `claude plugin install frontend-design@anthropic-plugin-directory --scope project` 成功、`claude plugin list` で `enabled`。各案件Repoの `.claude/settings.json` の `enabledPlugins` で宣言 |
-| `rss7-wireframe` | **未配置（使用不可）** | 原本はPC03の `%USERPROFILE%\.claude\skills\` のみ。GitHub上の4 Repo（ai-master / web-design-master / ks01 / chat-homepage）に原本なし。PC03停止中のため取得不可 |
-| `rss7-interactive-prototype` | **未配置（使用不可）** | 同上 |
+| `frontend-design` | **確認時点で使用可** | `claude plugin install frontend-design@anthropic-plugin-directory --scope project` 成功、`claude plugin list` で `enabled`。各案件Repoの `.claude/settings.json` の `enabledPlugins` で宣言 |
+| `rss7-wireframe` | **確認時点で未配置** | 原本はPC03の `%USERPROFILE%\.claude\skills\` のみ。GitHub上の4 Repo（ai-master / web-design-master / ks01 / chat-homepage）に原本なし。PC03停止中のため取得不可 |
+| `rss7-interactive-prototype` | **確認時点で未配置** | 同上 |
 
 - 独自2スキルは、PC03復旧時（またはPC03のバックアップから）原本の `SKILL.md` 一式を取り出し、内容をレビューして各案件Repoの `.claude/skills/<name>/` へPRで追加する。**同名の互換品を新規作成しない。**
 - 配置されるまでは「3スキル適用済みの正式デザイン」として完成扱いにしない。
